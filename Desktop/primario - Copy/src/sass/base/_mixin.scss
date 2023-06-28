@@ -1,0 +1,38 @@
+@import 'variables';// recuerda usar impor o use
+
+@mixin telefono {
+    @media (min-width:$telefono){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width:$tablet){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width:$desktop){
+        @content;
+    }
+}
+
+@mixin desktopXL {
+    @media (min-width:$desktopXL){
+        @content;
+    }
+}
+
+@mixin grid($columns, $gap) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    grid-gap: $gap;
+  }
+
+
+@mixin reseat{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
