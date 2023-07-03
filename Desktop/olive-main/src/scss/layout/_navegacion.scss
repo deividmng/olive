@@ -1,0 +1,40 @@
+.barra {
+    display: flex;
+    flex-direction: column;
+     @include  tablet {
+        flex-direction:row;
+        justify-content: space-between;
+     }
+ 
+}
+
+
+.navegacion {
+
+        @include tablet {
+            display: flex;
+            align-items: center;
+            margin-top: -2rem;
+        }
+
+    a {
+        color: $blanco;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+
+        @include tablet {
+            margin-right: 2rem;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+        }
+     }
+}
+
+.icono{
+    max-width: 10rem;
+    z-index: 1;
+
+}

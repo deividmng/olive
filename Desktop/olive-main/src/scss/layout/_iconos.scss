@@ -1,0 +1,27 @@
+.iconos-nosotros {
+  @include grid(3, 2rem);
+}
+
+.icono {
+  :first-of-type {
+    margin-left: 1rem;
+  }
+
+  text-align: center;
+  img {
+    height: 20rem;
+    width: 20rem;
+    border: 4px $gris solid;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    
+    
+ 
+  }
+  p{
+    padding-left: 2rem;
+  }
+ 
+}
