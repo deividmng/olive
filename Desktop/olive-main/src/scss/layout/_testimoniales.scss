@@ -12,12 +12,14 @@
             content: '';
             background-image: url(/src/img/cnt.jpg);  
             background-repeat: no-repeat;
+            background-size: cover;
             width: 6rem;
             height: 8rem;
             display: block;
              position: absolute;
              left: -2rem;
              top: 1rem;
+             
         }
     }
 

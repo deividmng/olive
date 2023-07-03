@@ -33,8 +33,14 @@
      }
 }
 
-.icono{
+.icono-logo{
     max-width: 10rem;
     z-index: 1;
-
+    border-radius: 3rem;
+    border: 2px color  darken($grisOscuro,5) solid;
+    
+}
+.icono{
+    max-width: 10rem;
+    z-index: 1;    
 }
