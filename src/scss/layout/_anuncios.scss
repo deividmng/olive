@@ -62,3 +62,46 @@
     }
 
 }
+
+.precio2 {
+    margin-left:10rem;
+    color:$verde;
+    font-weight: $bold;
+    font-size: 3rem;
+    
+    
+    margin-left: 55rem;
+
+}
+
+.iconos-caracteristicas2{
+    display: flex;
+    list-style: none;
+    padding: 0;
+
+    li{
+        margin-left: 7rem;
+        flex: -1;
+        display: flex;
+
+        img{
+            max-width: 15rem;
+            flex: 0 0 3rem;
+            margin-left: 11rem;
+            margin-right: auto;
+        }
+
+        p {
+            font-weight: $black;
+            margin-top: 3rem;
+            margin-right: -1rem;
+            
+        }
+    }
+    
+}
+
+.pc{
+    padding: 3rem 33rem;
+
+}
