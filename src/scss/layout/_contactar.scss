@@ -1,0 +1,32 @@
+.imagen-contacto{
+
+    background-image:url(/build/img/cnt.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        font-size: 4rem;
+        font-weight: $black;
+        color: $blanco;
+    
+    } 
+
+    p{
+        font-size: 1.8rem;
+        color: $blanco ;
+    }
+    
+    
+}
+
+
+  
+.imgs {
+    max-width: 30rem;
+    max-height: 30rem;
+    margin: auto; /* Centra la imagen horizontalmente utilizando margen automático */
+}
