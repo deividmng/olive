@@ -31,8 +31,10 @@
     text-align: center;
     margin-top: 2rem;
     display: $display;
+    border: none;
 
     &:hover {
         background-color: darken($bgcolor, 5);
+        cursor: pointer;
     }
 }

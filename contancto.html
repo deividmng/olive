@@ -30,9 +30,78 @@
         </div>
     </header>
 
-    <mani class="contenedor seccion">
+    <mani class="fm ">
 
-        <h1>Contacto</h1>
+        <h1>Contactow</h1>
+
+        <img class="fm" src="/src/img/nosotros.jpg" alt="">
+
+
+        <h2>llene el formulario</h2>
+
+        <form  class="fm formulario" action="" class="formulario">
+            <fieldset>
+                <legend>Informacion personal</legend>
+
+                <label for="nombre">nombre</label>
+                <input type="text" placeholder="Tu nombre" id="nombre">
+                
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="Tu email" id="email">
+                
+                <label for="tlf">Telefono</label>
+                <input type="tel" placeholder="Tu telefono" id="tlf">
+
+                <label  for="mensaje">Mensaje</label>
+                <br>
+                <textarea class="tex" name="" id="mensaje" ></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informacion Nosotros</legend>
+
+                <label for="Opciones">Vende o Compra</label>
+                <select name="" id="Opciones">
+                    
+                    <option value="" disabled selected>--Section--</option>
+                    <option value="Compra">Compra</option>
+                    <option value="Vende">Vende</option>
+                </select>
+
+                <label for="presupuesto">Presupuesto</label>
+                <input type="number" placeholder="Tu precio" id="presupuesto">
+            </fieldset>
+
+            <fieldset>
+                <legend>Contacto </legend>
+                <p>Como desea ser contactado</p>
+                <div class="forma-contacto">
+                    <label for="contactat-telefono">Telefono</label>
+                    <input  name="contacto" type="radio" value="telefono" id="contactat-telefono">
+                    
+                    <label for="contactat-gmail">Gmail</label>
+                    <input name="contacto"  type="radio" value="Gmail" id="contactat-gmail">
+                </div>
+
+                <p>
+                    Si eligio telefono, elija fecha i hora para ser contactado
+
+                </p>
+                
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha">
+                
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" min="09:00" max="18:00">
+
+            </fieldset>
+
+            <input type="submit" value="Enviar" class="boton-verde">
+           
+
+
+
+        </form>
     </mani>
 
     <footer class="footer seccion">
