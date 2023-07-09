@@ -1,9 +1,41 @@
-.barra {
+.derecha{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    @include tablet{
+        align-items: flex-end;
+
+        .dark-mode-boton{
+            width: 3rem;
+            margin-bottom: 2rem;
+            margin-top: -2rem;
+        }
+    }
+
+    .dark-mode-boton{
+        width: 3rem;
+        filter: invert(100%);
+
+        &:hover{
+            cursor: pointer;
+        }
+       
+    }
+}
+
+
+.barra {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+
+    
      @include  tablet {
         flex-direction:row;
         justify-content: space-between;
+        align-items: flex-end;
      }
  
 }
@@ -11,10 +43,16 @@
 
 .navegacion {
 
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s ease-in-out, opacity 0.5s linear;
+
         @include tablet {
             display: flex;
             align-items: center;
             margin-top: -2rem;
+            opacity: 1;
+            visibility: visible;
         }
 
     a {
@@ -44,3 +82,21 @@
     max-width: 10rem;
     z-index: 1;    
 }
+
+
+// MENU DE HAMBURGERSAS\\
+.mobile-menu{
+    @include tablet{
+        display: none;
+    }
+
+    img{
+        width: 5rem;
+    }
+}
+
+.mostrar {
+   visibility: visible;
+   opacity: 1;
+}
+
