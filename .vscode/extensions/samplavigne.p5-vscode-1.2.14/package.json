@@ -1,0 +1,81 @@
+{
+	"name": "p5-vscode",
+	"publisher": "samplavigne",
+	"displayName": "p5.vscode",
+	"description": "Create and manage p5.js projects.",
+	"version": "1.2.14",
+	"repository": "https://github.com/antiboredom/p5.vscode",
+	"engines": {
+		"vscode": "^1.68.0"
+	},
+	"categories": [
+		"Other",
+		"Programming Languages"
+	],
+	"keywords": [
+		"p5.js",
+		"p5",
+		"generator",
+		"project",
+		"template"
+	],
+	"icon": "images/asterisk.png",
+	"activationEvents": [
+		"onCommand:p5-vscode.createProject",
+		"onCommand:p5-vscode.installLibrary",
+		"workspaceContains:sketch.js"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "p5-vscode.createProject",
+				"title": "Create p5.js Project"
+			},
+			{
+				"command": "p5-vscode.installLibrary",
+				"title": "Install p5.js Contributor Library"
+			}
+		]
+	},
+	"extensionPack": [
+		"ritwickdey.liveserver"
+	],
+	"scripts": {
+		"vscode:prepublish": "yarn run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint src --ext ts",
+		"watch": "tsc -watch -p ./",
+		"pretest": "yarn run compile && yarn run lint",
+		"test": "node ./out/test/runTest.js",
+		"update-libraries": "node create_library_json.js",
+		"update-p5": "./update-p5.sh"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.2.0",
+		"@types/mocha": "^7.0.2",
+		"@types/node": "^13.13.52",
+		"@types/vscode": "^1.68.0",
+		"@typescript-eslint/eslint-plugin": "^2.34.0",
+		"@typescript-eslint/parser": "^2.34.0",
+		"eslint": "^6.8.0",
+		"glob": "^7.2.3",
+		"js-yaml": "^3.14.1",
+		"mocha": "^7.2.0",
+		"typescript": "^4.9.3",
+		"vscode-test": "^1.6.1"
+	},
+	"dependencies": {
+		"got": "^11.8.5"
+	},
+	"__metadata": {
+		"id": "862f411f-a45a-4e38-bfa9-7c9464b4ecca",
+		"publisherId": "ba65e688-6e2e-435b-8032-35c2eb84c1db",
+		"publisherDisplayName": "Sam Lavigne",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1692998343672,
+		"preRelease": false
+	}
+}

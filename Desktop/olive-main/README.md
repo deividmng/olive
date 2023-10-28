@@ -1,4 +1,3 @@
-# olive699
+dia on lewagon 09/22
+tocando js
 
-este es el untimo en el que estoy trabanjdo
-gd

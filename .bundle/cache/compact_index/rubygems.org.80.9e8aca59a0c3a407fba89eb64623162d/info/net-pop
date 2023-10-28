@@ -1,0 +1,4 @@
+---
+0.1.0 |checksum:774cffcab22425b9d85cd5089eb6c8a6172a3038866a8299997b2966eb39348f
+0.1.1 digest:>= 0,net-protocol:>= 0,timeout:>= 0|checksum:ab27bb59b03dd44579be3f4190ebefbb075317763960e1eac70cb845fba09aea
+0.1.2 net-protocol:>= 0|checksum:848b4e982013c15b2f0382792268763b748cce91c9e91e36b0f27ed26420dff3
